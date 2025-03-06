@@ -335,6 +335,7 @@ a:focus {
 @media (max-width: 767px) {
   .info-wrapper .wrapper .info .items .item {
     margin-bottom: 25px;
+    text-align: center;
   }
 }
 .info-wrapper .wrapper .info .items .item:last-child {
@@ -354,7 +355,7 @@ a:focus {
   .info-wrapper .wrapper .info .items .item .icon {
     width: 50px;
     height: 50px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 }
 .info-wrapper .wrapper .info .items .item .icon img {
@@ -550,12 +551,11 @@ a:focus {
 
 .get-consultation {
   padding: 20px 0;
-  background: #26211f;
-  margin-bottom: 20px;
+  background: #FFF6EE;
 }
-@media (max-width: 1024px) {
+@media (max-width: 550px) {
   .get-consultation {
-    padding: 30px 0px;
+    padding: 10px 0 30px;
   }
 }
 .get-consultation .wrapper {
@@ -584,13 +584,13 @@ a:focus {
   font-size: 16px;
   border-radius: 26.376px;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  background: #FFF6EE;
+  background: #271A1A;
   font-size: 16px;
   font-weight: 600;
-  color: #271A1A;
+  color: #FFF6EE;
 }
 .get-consultation .wrapper h3 {
-  color: #DEC58C;
+  color: #271A1A;
   font-family: "Lora";
   font-size: 44px;
   font-style: normal;
@@ -1021,6 +1021,7 @@ a:focus {
 @media (max-width: 1024px) {
   .banner .wrapper .left-info .info h2 {
     font-size: 28px;
+    margin-bottom: 10px;
   }
 }
 .banner .wrapper .left-info .info p {
@@ -1162,6 +1163,222 @@ a:focus {
 }
 .banner .wrapper .right-info .images .circle-img img {
   width: 100%;
+}
+
+.planning-solutions-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .planning-solutions-wrap {
+    flex-direction: column-reverse;
+  }
+}
+.planning-solutions-wrap .slider-for4 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.planning-solutions-wrap .slider-for4 .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.planning-solutions-wrap .slider-nav4 .item {
+  height: auto;
+  max-height: 150px;
+  border: 1px solid #f6f4f2;
+  overflow: hidden;
+  margin: 0 5px;
+  position: relative;
+  z-index: 0;
+}
+.planning-solutions-wrap .slider-nav4 .item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: rgba(39, 26, 26, 0.5);
+}
+@media (max-width: 767px) {
+  .planning-solutions-wrap .slider-nav4 .item {
+    height: auto;
+    margin: 10px 5px 0;
+    opacity: 1;
+  }
+}
+.planning-solutions-wrap .slider-nav4 .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.planning-solutions-wrap .slider-nav4 .item.slick-current {
+  opacity: 1;
+  transform: scale(1.03);
+}
+.planning-solutions-wrap .slider-nav4 .item.slick-current:after {
+  content: none;
+}
+@media (max-width: 767px) {
+  .planning-solutions-wrap .slider-nav4 .item.slick-current {
+    transform: scale(1);
+  }
+}
+.planning-solutions-wrap .left {
+  width: 230px;
+  min-width: 230px;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .planning-solutions-wrap .left {
+    width: 100%;
+    margin: 0;
+    display: block;
+    margin-top: 10px;
+  }
+}
+.planning-solutions-wrap .right {
+  width: calc(100% - 240px);
+  position: relative;
+  z-index: 0;
+}
+@media (max-width: 767px) {
+  .planning-solutions-wrap .right {
+    width: 100%;
+  }
+}
+
+.planning-solutions {
+  background: url(../img/planning-solutions-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px 0;
+}
+.planning-solutions .white-btn {
+  border-radius: 26.376px;
+  border: 0.5px solid rgba(246, 244, 242, 0.53);
+  background: #f6f4f2;
+  padding: 10px 34px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #271A1A;
+}
+.planning-solutions .white-btn:hover {
+  background: #271A1A;
+  color: #f6f4f2;
+  border-color: #f6f4f2;
+}
+.planning-solutions .arrow-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .planning-solutions .arrow-wrap {
+    margin-top: 20px;
+  }
+}
+.planning-solutions .arrow-wrap .slider-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: static;
+  z-index: 10;
+  width: 90px;
+  overflow: hidden;
+  border-radius: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .planning-solutions .arrow-wrap .slider-navigation {
+    width: 70px;
+  }
+}
+.planning-solutions .arrow-wrap .slider-navigation button {
+  position: static;
+  transform: translate(0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  background: #fff;
+  height: 40px;
+  border-radius: 50%;
+}
+@media (max-width: 767px) {
+  .planning-solutions .arrow-wrap .slider-navigation button {
+    width: 30px;
+    height: 30px;
+  }
+}
+.planning-solutions .arrow-wrap .slider-navigation button:hover {
+  opacity: 0.5;
+}
+.planning-solutions .arrow-wrap .slider-navigation button img {
+  margin: auto;
+  width: 18px;
+}
+@media (max-width: 767px) {
+  .planning-solutions .arrow-wrap .slider-navigation button img {
+    width: 14px;
+  }
+}
+.planning-solutions .arrow-wrap .slider-navigation button:before {
+  content: none;
+}
+.planning-solutions .arrow-wrap .slider-navigation button.slick-prev img {
+  transform: rotate(180deg);
+}
+.planning-solutions .main-title {
+  color: #DEC58C;
+  text-shadow: 0px 31.731px 25.385px rgba(0, 0, 0, 0.29), 0px 13.256px 10.605px rgba(0, 0, 0, 0.21), 0px 7.087px 5.67px rgba(0, 0, 0, 0.17), 0px 3.973px 3.179px rgba(0, 0, 0, 0.14), 0px 2.11px 1.688px rgba(0, 0, 0, 0.12), 0px 0.878px 0.702px rgba(0, 0, 0, 0.08);
+  font-family: "Lora";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .planning-solutions .main-title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .planning-solutions .main-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 @font-face {
